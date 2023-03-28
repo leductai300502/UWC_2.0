@@ -1,0 +1,19 @@
+.animation{
+    animation: close_Form 0.9s cubic-bezier(0.01, 0.47, 0.3, 0.9) 1 forwards;
+}
+@keyframes close_Form {
+ 
+    0%{
+        opacity: 1;
+        filter: blur(1px);
+    }
+    10%{
+        opacity: 0.75;
+        filter: blur(4px);
+    }
+    100%{
+
+        opacity: 0;
+        filter: blur(8px);
+    }
+}

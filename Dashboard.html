@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="config/tailwind.config.js">
+    <link rel="stylesheet" href="style_animation.css">
+    <script>
+        $(document).ready(function() {
+            $(".extend").click(function() {
+                $(".list_item").toggleClass("hidden");
+                $(".icon").toggleClass("fa-rotate-90");
+            });
+        });
+
+    </script>
+    <title>Trang Chu</title>
+</head>
+
+<body>
+    <header class="flex fex-row bg-zinc-900 gap-x-4 p-4">
+        <div class="flex w-1/5 p-2">LOGO</div>
+        <div class="flex w-3/5 p-2">
+            <div class="flex flex-row bg-white items-center w-full border-2 border-black rounded-lg">
+                <div class="flex p-2"><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
+                <input class="grow h-full rounded-lg outline-none" type="text" placeholder="Tìm Kiếm Nhanh">
+            </div>
+        </div>
+        <div class="flex flex-row w-1/5 items-center justify-center gap-x-4 bg-gray-300 rounded-lg">
+            <div class="flex mail p-2"><i class="fa-solid fa-envelope text-2xl"></i></div>
+            <div class="flex notify p-2"><i class="fa-solid fa-bell text-2xl"></i></div>
+            <div class="flex avatar h-10 w-10 rounded-full">
+                <img class="rounded-full" src="image/hehe.jpg" alt="">
+            </div>
+            <div class="flex flex-col">
+                <div>Duc Tai</div>
+                <div>admin</div>
+            </div>
+            <div class="flex p-2"><i class="fa-solid fa-caret-right fa-rotate-90 text-2xl"></i></div>
+        </div>
+    </header>
+    <main class="flex flex-row w-full bg-white text-blck">
+        <div class="flex flex-col w-1/5 bg-zinc-300">
+            <div class="flex justify-center text-4xl font-bold p-8">UWC 2.0</div>
+            <div class="flex items-center border-r-4 border-zinc-300 hover:text-green-900 hover:border-green-900 p-2 h-24">
+                <i class="fa-solid fa-house text-2xl p-2"></i>
+                <a href="#" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
+            </div>
+            <div class="flex flex-row items-center border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black p-2 h-24">
+                <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
+                <a href="controller.html" class="p-2 font-bold text-2xl p-2">Bảng Điều Khiển</a>
+            </div>
+            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black items-center p-2 h-24">
+                <i class="fa-solid fa-square-plus text-2xl p-2"></i>
+                <a href="#" class="p-2 font-bold text-2xl p-2">Tổng Quan</a>
+            </div>
+            <div class="flex flex-col">
+                <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black items-center p-2 h-24 extend">
+                    <i class="fa-solid fa-book text-2xl p-2"></i>
+                    <a href="#" class="p-2 font-bold text-2xl p-2">Thông Tin</a>
+                    <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 icon"></i>
+                </div>
+                <div>
+                    <ul class="bg-zinc-400 list_item">
+                        <li class="flex flex-row items-center h-24">
+                            <i class="fa-solid fa-user text-2xl p-2"></i>
+                            <a href="Employee.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
+                            </a>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24">
+                            <i class="fa-solid fa-gauge text-2xl p-2"></i>
+                            <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24">
+                            <i class="fa-solid fa-location-dot text-2xl p-2"></i>
+                            <h1 class="p-2 font-bold text-2xl p-2">Điểm Thu Thập</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center border-r-4 border-zinc-300 hover:text-green-900 hover:border-green-900 p-2 h-24">
+                <i class="fa-sharp fa-solid fa-gear text-2xl p-2"></i>
+                <a href="#" class="text-2xl font-bold p-2">Cài Đặt</a>
+            </div>
+
+        </div>
+        <div class="flex flex-col w-4/5 p-2 trang_chu">
+            <div class="p-8 text-3xl font-bold">Trang Chủ</div>
+            <div class="grid grid-cols-3 gap-4 h-48 p-4">
+                <div class="bg-zinc-300 rounded-lg p-4"></div>
+                <div class="bg-zinc-300 rounded-lg p-4"></div>
+                <div class="bg-zinc-300 rounded-lg p-4"></div>
+            </div>
+            <div class="flex p-4 h-full">
+                <div class="flex w-full h-full bg-zinc-300 rounded-lg p-4"></div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer class="w-full bg-zinc-900 text-zinc-400 text-1xl">
+        <div class="container mx-auto p-8">
+            <div class="flex flex-col">
+                <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
+                    <div class="list_item">
+                        <div>
+                            <a href="">Stories</a>
+                        </div>
+                        <div>
+                            <a href="">Impact</a>
+                        </div>
+                        <div>
+                            <a href="">Company</a>
+                        </div>
+                        <div>
+                            <a href="">Newsroom</a>
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <div>
+                            <a href="../trang_chu/home.php">Shop Nike.com</a>
+                        </div>
+                        <div>
+                            <a href="https://www.converse.com/shop/mens-shoes">Shop Converse.com</a>
+                        </div>
+                        <div>
+                            <a href="">Get Help</a>
+                        </div>
+                        <div>
+                            <a href="">Investors</a>
+                        </div>
+                    </div>
+                    <div class="flex list_item">
+                        <div class="grow">
+                            <a href="https://www.instagram.com/nike/" class="text-white"><i class="fa-brands fa-instagram text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://twitter.com/nike" class="text-white"><i class="fa-brands fa-square-twitter text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.youtube.com/user/nike/videos" class="text-white"><i class="fa-brands fa-youtube text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.facebook.com/nike/" class="text-white"><i class="fa-brands fa-facebook text-3xl menu_hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-end">
+                    <div class="grid grid-cols-4 gap-4 p-4 text-1xl max-sm:flex-row">
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Terms of Use</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Nike Privacy Policy</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">CA Supply Chains Act</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white"> @2022 Nike, Inc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+</body>
+
+</html>
