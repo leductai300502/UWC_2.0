@@ -69,7 +69,7 @@
             <div class="flex justify-center text-4xl font-bold p-8">UWC 2.0</div>
             <div class="flex items-center border-r-4 border-zinc-300 hover:text-green-900 hover:border-green-900 p-2 h-24">
                 <i class="fa-solid fa-house text-2xl p-2"></i>
-                <a href="index.html" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
+                <a href="Dashboard.html" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
             </div>
             <div class="flex flex-row items-center p-2 h-24">
                 <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
@@ -86,18 +86,22 @@
                     <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 icon"></i>
                 </div>
                 <div>
-                    <ul class="bg-zinc-400 list_item">
+                    <ul class="bg-zinc-400 list_item cursor-pointer">
                         <li class="flex flex-row items-center h-24 text-zinc-500 border-black">
                             <i class="fa-solid fa-user text-2xl p-2"></i>
-                            <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
+                            <a href="Employee.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
+                            </a>
                         </li>
                         <li class="flex w-full bg-white h-px"></li>
-                        <li class="flex flex-row items-center h-24">
+                        <li class="flex flex-row items-center h-24 hover:text-zinc-500 hover:border-black">
                             <i class="fa-solid fa-gauge text-2xl p-2"></i>
-                            <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
+                            <a href="Vehical.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
+                            </a>               
                         </li>
                         <li class="flex w-full bg-white h-px"></li>
-                        <li class="flex flex-row items-center h-24">
+                        <li class="flex flex-row items-center h-24 hover:text-zinc-500 hover:border-black">
                             <i class="fa-solid fa-location-dot text-2xl p-2"></i>
                             <h1 class="p-2 font-bold text-2xl p-2">Điểm Thu Thập</h1>
                         </li>
@@ -113,7 +117,7 @@
         <div class="flex flex-col w-4/5 gap-y-8 p-2 trang_chu">
             <div class="p-8 text-3xl font-bold">Nhân Viên</div>
             <div class="p-8 text-xl font-bold">Malcolm Lockyer</div>
-            <div class="grid grid-cols-3 gap-4 h-48 p-4">
+            <div class="grid grid-cols-3 gap-4 p-4">
                 <div class="flex flex-col bg-zinc-300 rounded-lg p-4">
                     <div class="flex justify-center text-2xl font-bold p-2 items-center">Thời Gian Làm</div>
                     <div class="flex flex-row justify-center items-center p-2">
