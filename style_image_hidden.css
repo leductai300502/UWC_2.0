@@ -1,0 +1,18 @@
+.environment{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/z-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* display: flex; */
+}
+.text_decorate{
+    text-shadow: -2px 1px #dfb7c9;
+}
+.cover{
+    background-color: rgba(245, 234, 232, 0.5);
+}
+.hover_text:hover{
+    font-size: larger;
+}
