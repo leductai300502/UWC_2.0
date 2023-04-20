@@ -1,13 +1,27 @@
-<form id="myForm" onsubmit="return false;">
-  <!-- các trường nhập liệu -->
-  <input type="submit" value="Gửi" onclick="submitForm()">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Get Location</title>
+  </head>
+  <body>
+    <p>Click the button to get your location:</p>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="demo"></p>
 
-<script>
-function submitForm() {
-  // xử lý dữ liệu nhập vào ở đây
-  // return;
-  // sau khi xử lý xong, có thể thực hiện chuyển hướng đến trang khác
-  window.location.href = "controller.html";
-}
-</script>
+    <script>
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>
