@@ -66,42 +66,42 @@
     </header>
     <main class="flex flex-row w-full bg-white text-blck">
         <div class="flex flex-col w-1/5 bg-zinc-300">
-            <div class="flex justify-center text-4xl font-bold p-8">UWC 2.0</div>
-            <div class="flex items-center border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black p-2 h-24">
+            <div class="flex justify-center text-4xl text-green-800 font-bold p-8">UWC 2.0</div>
+            <div class="flex items-center border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 p-2 h-24">
                 <i class="fa-solid fa-house text-2xl p-2"></i>
                 <a href="Dashboard.html" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
             </div>
-            <div class="flex flex-row items-center border-r-4 p-2 h-24 border-zinc-300 hover:text-zinc-500 hover:border-black">
+            <div class="flex flex-row items-center border-r-4 p-2 h-24 border-zinc-300 hover:text-green-800 hover:border-green-900">
                 <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
                 <a href="controller.html" class="p-2 font-bold text-2xl p-2">Bảng Điều Khiển</a>
             </div>
-            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black items-center p-2 h-24">
+            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24">
                 <i class="fa-solid fa-square-plus text-2xl p-2"></i>
                 <a href="#" class="p-2 font-bold text-2xl p-2">Tổng Quan</a>
             </div>
             <div class="flex flex-col">
-                <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-zinc-500 hover:border-black items-center p-2 h-24 extend">
+                <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24 extend">
                     <i class="fa-solid fa-book text-2xl p-2"></i>
                     <a href="#" class="p-2 font-bold text-2xl p-2">Thông Tin</a>
                     <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 icon"></i>
                 </div>
                 <div>
                     <ul class="bg-zinc-400 list_item cursor-pointer">
-                        <li class="flex flex-row items-center h-24 hover:text-zinc-500 hover:border-black">
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
                             <i class="fa-solid fa-user text-2xl p-2"></i>
                             <a href="Employee.html">
                                 <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
                             </a>
                         </li>
                         <li class="flex w-full bg-white h-px"></li>
-                        <li class="flex flex-row items-center h-24 text-zinc-500 border-black">
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900 border-black">
                             <i class="fa-solid fa-gauge text-2xl p-2"></i>
                             <a href="Vehical.html">
                                 <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
                             </a>
                         </li>
                         <li class="flex w-full bg-white h-px"></li>
-                        <li class="flex flex-row items-center h-24 hover:text-zinc-500 hover:border-black">
+                        <li class="flex flex-row items-center h-24 text-green-800">
                             <i class="fa-solid fa-location-dot text-2xl p-2"></i>
                             <a href="MCP.html">
                                 <h1 class="p-2 font-bold text-2xl p-2">Điểm Thu Thập</h1>
@@ -110,22 +110,22 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex items-center border-r-4 border-zinc-300 border-zinc-300 hover:text-zinc-500 hover:border-black p-2 h-24">
+            <div class="flex items-center border-r-4 border-zinc-300 border-zinc-300 hover:text-green-800 hover:border-green-900 p-2 h-24">
                 <i class="fa-sharp fa-solid fa-gear text-2xl p-2"></i>
                 <a href="#" class="text-2xl font-bold p-2">Cài Đặt</a>
             </div>
 
         </div>
-        <div class="flex flex-col w-4/5 gap-y-8 p-2 trang_chu">
-            <div class="p-8 text-3xl font-bold">Điểm Thu Thập</div>
-            <div class="p-8 text-2xl font-bold">MCP 1</div>
+        <div class="flex flex-col w-4/5 gap-y-4 p-2 trang_chu">
+            <div class="p-4 text-4xl font-bold">Điểm Thu Thập</div>
+            <div class="p-4 text-3xl font-bold">MCP 1</div>
             <div class="grid grid-cols-3 gap-4 p-4">
-                <div class="flex flex-col bg-zinc-300 rounded-lg p-4">
-                    <div class="flex justify-center text-2xl font-bold p-2 items-center">Vị Trí MCP 1</div>
-                    <div class="flex flex-row justify-center items-center p-2">
+                <div class="flex flex-col bg-zinc-300 rounded-lg gap-y-4 p-4">
+                    <div class="flex justify-center text-2xl bg-green-500 rounded-lg text-white font-bold p-2 items-center">ID</div>
+                    <div class="flex flex-row justify-center bg-white rounded-lg items-center p-2">
                         <div class="flex flex-row justify-center p-2">
-                            <div class="flex text-5xl font-bold justify-center p-1">---</div>
-                            <div class="flex text-2xl items-center justify-center p-1">$$$</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">CP-001</div>
+                            <!-- <div class="flex text-2xl items-center justify-center p-1">$$$</div> -->
                         </div>
                         <!-- <div class="flex flex-col justify-center p-2">
                             <div class="flex text-5xl font-bold justify-center p-1"></div>
@@ -133,12 +133,12 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="flex flex-col bg-zinc-300 rounded-lg p-4">
-                    <div class="flex justify-center text-2xl font-bold p-2 items-center">Nhân Viên Thực Hiện</div>
-                    <div class="flex flex-row justify-center items-center p-2">
+                <div class="flex flex-col bg-zinc-300 rounded-lg gap-y-4 p-4">
+                    <div class="flex justify-center text-2xl bg-green-500 rounded-lg text-white font-bold p-2 items-center">Nhân Viên Thực Hiện</div>
+                    <div class="flex flex-row justify-center bg-white rounded-lg items-center p-2">
                         <div class="flex flex-row justify-center p-2">
-                            <div class="flex text-5xl font-bold justify-center p-1">---</div>
-                            <div class="flex text-2xl items-center justify-center p-1">$$$</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">Harry</div>
+                            <!-- <div class="flex text-2xl items-center justify-center p-1">$$$</div> -->
                         </div>
                         <!-- <div class="flex flex-col justify-center p-2">
                             <div class="flex text-5xl font-bold justify-center p-1">5</div>
@@ -146,19 +146,19 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="flex flex-col bg-zinc-300 rounded-lg p-4">
-                    <div class="flex justify-center text-2xl font-bold p-2 items-center">Trạng Thái</div>
-                    <div class="flex flex-row justify-center items-center p-2">
+                <div class="flex flex-col bg-zinc-300 rounded-lg p-4 gap-y-4">
+                    <div class="flex justify-center text-2xl bg-green-500 rounded-lg text-white font-bold p-2 items-center">Trạng Thái</div>
+                    <div class="flex flex-row justify-center bg-white rounded-lg items-center p-2">
                         <div class="flex flex-row justify-center p-2 hidden">
-                            <div class="flex text-2xl font-bold justify-center p-1">Còn Khoảng Trống</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">Còn Khoảng Trống</div>
                             <div class="flex text-2xl items-center justify-center p-1"><i class="fa-sharp fa-solid fa-circle text-orange-400"></i></div>
                         </div>
                         <div class="flex flex-row justify-center p-2">
-                            <div class="flex text-2xl font-bold justify-center p-1">Rỗng</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">Rỗng</div>
                             <div class="flex text-2xl items-center justify-center p-1"><i class="fa-sharp fa-solid fa-circle text-green-400"></i></div>
                         </div>
                         <div class="flex flex-row justify-center p-2 hidden">
-                            <div class="flex text-2xl font-bold justify-center p-1">Đầy</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">Đầy</div>
                             <div class="flex text-2xl items-center justify-center p-1"><i class="fa-sharp fa-solid fa-circle text-gray-400"></i></div>
                         </div>
                         <!-- <div class="flex flex-col justify-center p-2">
@@ -182,15 +182,15 @@
                                 <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 cursor-pointer"></i>
                             </div>
                         </div> -->
-                        <div class="flex w-1/6 h-3/4 bg-gray-500 rounded-lg p-2 items-center justify-between">
-                            <div class="flex p-2 text-xl">Tạo mới</div>
+                        <div class="flex w-1/6 h-3/4 bg-gray-500 rounded-lg bg-green-600 p-2 items-center justify-between">
+                            <div class="flex p-2 text-xl text-zinc-200">Tạo mới</div>
                             <a href="Add_MCP.html">
                                 <i class="fa-solid fa-circle-plus text-xl p-2 cursor-pointer"></i>
                             </a>
                         </div>
                     </div>
                     <div class="w-full h-full p-4 bg-white rounded-3xl">
-                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden">
+                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item" id="item_0">
                             <thead class="border-b-2 border-black text-center rounded-lg p-2">
                               <tr>
                                 <th>ID</th>
@@ -202,35 +202,112 @@
                             <tbody class="text-center">
                               <tr class="border-b-2 border-black info-001">
                                 <td class="p-4">001</td>
-                                <td class="p-4">Xe 1</td>
+                                <td class="p-4">MCP 1</td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-002">
                                 <td class="p-4">002</td>
-                                <td class="p-4">Xe Đẩy 2</td>
+                                <td class="p-4">MCP 2</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-003">
                                 <td class="p-4">003</td>
-                                <td class="p-4">Xe 3</td>
+                                <td class="p-4">MCP 3</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-004">
                                 <td class="p-4">004</td>
-                                <td class="p-4">Xe Đẩy 1</td>
+                                <td class="p-4">MCP 4</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                             </tbody>
-                          </table>
+                        </table>
+                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_1">
+                            <thead class="border-b-2 border-black text-center rounded-lg p-2">
+                              <tr>
+                                <th>ID</th>
+                                <th>Tên MCP</th>
+                                <th>Sức Chứa</th>
+                                <th>Trạng thái</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-center">
+                              <tr class="border-b-2 border-black info-001">
+                                <td class="p-4">001</td>
+                                <td class="p-4">MCP 5</td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-002">
+                                <td class="p-4">002</td>
+                                <td class="p-4">MCP 6</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-003">
+                                <td class="p-4">003</td>
+                                <td class="p-4">MCP 7</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-004">
+                                <td class="p-4">004</td>
+                                <td class="p-4">MCP 8</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_2">
+                            <thead class="border-b-2 border-black text-center rounded-lg p-2">
+                              <tr>
+                                <th>ID</th>
+                                <th>Tên MCP</th>
+                                <th>Sức Chứa</th>
+                                <th>Trạng thái</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-center">
+                              <tr class="border-b-2 border-black info-001">
+                                <td class="p-4">001</td>
+                                <td class="p-4">MCP 9</td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-002">
+                                <td class="p-4">002</td>
+                                <td class="p-4">MCP 10</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-003">
+                                <td class="p-4">003</td>
+                                <td class="p-4">MCP 11</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2 info-004">
+                                <td class="p-4">004</td>
+                                <td class="p-4">MCP 12</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex flex-row gap-x-4 justify-center cursor-pointer">
+                            <div><i class="fa-solid fa-arrow-left text-xl" id="previous"></i></div>
+                            <div><i class="fa-solid fa-arrow-right text-xl" id="next"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="change.js"></script>
 </body>
 
 </html>

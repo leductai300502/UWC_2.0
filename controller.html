@@ -157,7 +157,7 @@
                                 <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 cursor-pointer"></i>
                             </div>
                         </div>
-                        <div class="flex w-1/6 h-3/4 bg-green-600 rounded-lg p-2 items-center">
+                        <div class="flex w-1/6 h-3/4 bg-green-600 rounded-lg p-2 justify-between items-center">
                             <div class="flex p-2 text-xl text-zinc-200">Tạo mới</div>
                             <a href="Add_Task_janitor.html">
                                 <i class="fa-solid fa-circle-plus text-xl p-2 cursor-pointer Janitor"></i>
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="w-full h-full p-4 bg-white rounded-3xl">
-                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden">
+                        <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item" id="item_0">
                             <thead class="border-b-2 border-black text-center rounded-lg p-2">
                               <tr>
                                 <th>ID</th>
@@ -187,21 +187,62 @@
                                 <td class="p-4">10 phút trước</td>
                               </tr>
                               <tr class="border-b-2 border-black p-2">
-                                <td class="p-4">001</td>
+                                <td class="p-4">002</td>
+                                <td class="p-4">Le Duc Tai</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">003</td>
+                                <td class="p-4">Jone</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">004</td>
+                                <td class="p-4">Hehe</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_1">
+                            <thead class="border-b-2 border-black text-center rounded-lg p-2">
+                              <tr>
+                                <th>ID</th>
+                                <th>Nhân viên</th>
+                                <th>Đã hoàn thành</th>
+                                <th>Trạng thái</th>
+                                <th>Hoạt Động</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-center">
+                              <tr class="border-b-2 border-black">
+                                <td class="p-4">005</td>
+                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">006</td>
                                 <td class="p-4">Malcolm Lockyer</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
                               </tr>
                               <tr class="border-b-2 border-black p-2">
-                                <td class="p-4">001</td>
+                                <td class="p-4">007</td>
                                 <td class="p-4">Malcolm Lockyer</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
                               </tr>
                               <tr class="border-b-2 border-black p-2">
-                                <td class="p-4">001</td>
+                                <td class="p-4">008</td>
                                 <td class="p-4">Malcolm Lockyer</td>
                                 <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
@@ -209,11 +250,57 @@
                               </tr>
                             </tbody>
                           </table>
+                          <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_2">
+                            <thead class="border-b-2 border-black text-center rounded-lg p-2">
+                              <tr>
+                                <th>ID</th>
+                                <th>Nhân viên</th>
+                                <th>Đã hoàn thành</th>
+                                <th>Trạng thái</th>
+                                <th>Hoạt Động</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-center">
+                              <tr class="border-b-2 border-black">
+                                <td class="p-4">009</td>
+                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">0010</td>
+                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">0011</td>
+                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                              <tr class="border-b-2 border-black p-2">
+                                <td class="p-4">0012</td>
+                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4">10 phút trước</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="flex flex-row gap-x-4 justify-center cursor-pointer">
+                            <div><i class="fa-solid fa-arrow-left text-xl" id="previous"></i></div>
+                            <div><i class="fa-solid fa-arrow-right text-xl" id="next"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="change.js"></script>
     <!-- <footer class="w-full bg-zinc-900 text-zinc-400 text-1xl">
         <div class="container mx-auto p-8">
             <div class="flex flex-col">
