@@ -20,22 +20,19 @@
                 $(".Janitor").toggleClass("hidden");
                 $(".Collector").toggleClass("hidden");
             });
-            // $(".info-001").click(function() {
-            //     $(".info-001").toggleClass("hidden");
-            //     $(".Collector").toggleClass("hidden");
-            // });
-            // $(".info-002").click(function() {
-            //     $(".Janitor").toggleClass("hidden");
-            //     $(".Collector").toggleClass("hidden");
-            // });
-            // $(".info-003").click(function() {
-            //     $(".Janitor").toggleClass("hidden");
-            //     $(".Collector").toggleClass("hidden");
-            // });
-            // $(".info-004").click(function() {
-            //     $(".Janitor").toggleClass("hidden");
-            //     $(".Collector").toggleClass("hidden");
-            // });
+            var array = ['Malcolm_Lockyer', 'Ben', 'Anna', 'Anh_Ni', 'Truong_Son','Nhat_Ha','Minh_Thien','Duc_Tai','Nhat_Hoang','Bos','Volka','Zeni'];
+            $.each(array, function(index, value){
+                $("."+ value).click(function() {
+                    $(".form").toggleClass("hidden");
+                    var content = $(".name_" + value).html();
+                    $(".name").html(content);
+    
+                });
+            });
+
+            $(".Close").click(function() {
+                $(".form").toggleClass("hidden");
+            });
         });
 
     </script>
@@ -196,12 +193,13 @@
                                 <th>Đã hoàn thành</th>
                                 <th>Trạng thái</th>
                                 <th>Hoạt Động</th>
+                                <th>Liên Hệ</th>
                               </tr>
                             </thead>
                             <tbody class="text-center">
                               <tr class="border-b-2 border-black info-001">
                                 <td class="p-4">001</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Malcolm_Lockyer">Malcolm Lockyer</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -213,10 +211,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Malcolm_Lockyer"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-002">
                                 <td class="p-4">002</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Ben">Ben</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -228,10 +227,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Ben"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-003">
                                 <td class="p-4">003</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Anna">Anna</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -243,10 +243,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Anna"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-004">
                                 <td class="p-4">004</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Anh_Ni">Anh Ni</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -258,6 +259,7 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Anh_Ni"></i></td>
                               </tr>
                             </tbody>
                         </table>
@@ -274,7 +276,7 @@
                             <tbody class="text-center">
                               <tr class="border-b-2 border-black info-001">
                                 <td class="p-4">001</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Truong_Son">Truong Son</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -284,12 +286,13 @@
                                         <div class=" w-6 h-2 bg-zinc-400"></div>
                                     </div>
                                 </td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700 Truong_Son"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-002">
                                 <td class="p-4">002</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Nhat_Ha">Nhat Ha</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -301,10 +304,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Nhat_Ha"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-003">
                                 <td class="p-4">003</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Minh_Thien">Minh Thien</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -316,10 +320,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Minh_Thien"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-004">
                                 <td class="p-4">004</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Duc_Tai">Duc Tai</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -331,6 +336,7 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Duc_Tai"></i></td>
                               </tr>
                             </tbody>
                         </table>
@@ -347,7 +353,7 @@
                             <tbody class="text-center">
                               <tr class="border-b-2 border-black info-001">
                                 <td class="p-4">001</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Nhat_Hoang">Nhat Hoang</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -359,10 +365,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Nhat_Hoang"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-002">
                                 <td class="p-4">002</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Bos">Bos</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -374,10 +381,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Bos"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-003">
                                 <td class="p-4">003</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Volka">Volka</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -389,10 +397,11 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Volka"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-004">
                                 <td class="p-4">004</td>
-                                <td class="p-4">Malcolm Lockyer</td>
+                                <td class="p-4 name_Zeni">Zeni</td>
                                 <td class="p-4">
                                     <div class="flex flex-row gap-x-1 justify-center">
                                         <div class=" w-6 h-2 bg-green-700"></div>
@@ -404,6 +413,7 @@
                                 </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                                 <td class="p-4">10 phút trước</td>
+                                <td><i class="fa-solid fa-envelope text-2xl cursor-pointer sent_mail Zeni"></i></td>
                               </tr>
                             </tbody>
                         </table>
@@ -416,6 +426,109 @@
             </div>
         </div>
     </main>
+    <div class="absolute flex flex-col gap-y-4 items-center justify-center h-1/2 bg-gray-400 rounded-lg text-gray-800 p-10 top-64 right-0 z-20 hidden form">
+        <div class="absolute flex h-4 w-4 top-2 right-2 p-2">
+            <i class="absolute rounded-full fa-solid fa-circle-xmark text-xl text-red-500 top-0 left-0 cursor-pointer Close"></i>
+        </div>
+        <div class="flex flex-row w-full h-10">
+            <div class="flex h-10 w-10 rounded-full overflow-hidden">
+                <img src="image/hehe.jpg" alt="">
+            </div>
+            <div class="name flex items-center ml-2 font-bold"></div>
+        </div>
+        <!-- Component Start -->
+        <div class="flex flex-col flex-grow w-full max-w-xl bg-white shadow-xl rounded-lg overflow-hidden">
+            <div class="flex flex-col flex-grow h-0 p-4 overflow-auto">
+                <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <div class="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <div class="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs">
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <div class="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                </div>
+                <div class="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">
+                    <div>
+                        <div class="bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg">
+                            <p class="text-sm">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <span class="text-xs text-gray-500 leading-none">2 min ago</span>
+                    </div>
+                    <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-300 p-4">
+                <input class="flex items-center h-10 w-full rounded px-3 text-sm" type="text" placeholder="Type your message…">
+            </div>
+        </div>
+        <!-- Component End  -->
+    
+    </div>
     <script src="change.js"></script>
 </body>
 

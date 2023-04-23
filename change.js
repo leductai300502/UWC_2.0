@@ -17,12 +17,8 @@ document.getElementById('previous').onclick = function(){
     active= active - 1 <= -1 ? 0 : active - 1;
     Load();
 }
-// item.forEach(li => {
-//     li.addEventListener('click',function(e){
-//         document.getElementById('action').style.top= e.target.offsetTop + 'px';
-//         item.forEach(item_remove_active2 =>{
-//             item_remove_active2.classList.remove('active2');
-//             this.classList.add('active2')
-//         });
-//     })
-// })
+document.getElementsByClassName('extend').onclick = function(){
+    // $('.turn').toggleClass("fixed");
+    $('.turn').toggleClass("hidden");
+
+}
