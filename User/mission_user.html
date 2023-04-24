@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="config/tailwind.config.js">
+    <link rel="stylesheet" href="style_animation.css">
+    <script>
+        $(document).ready(function() {
+            $(".extend").click(function() {
+                $(".list_item").toggleClass("hidden");
+                $(".icon").toggleClass("fa-rotate-90");
+            });
+        });
+
+    </script>
+    <title>Trang Chu</title>
+</head>
+
+<body>
+    <header class="flex fex-row bg-zinc-900 gap-x-4 p-4">
+        <div class="flex w-1/5 p-2">LOGO</div>
+        <div class="flex w-3/5 p-2">
+            <div class="flex flex-row bg-white items-center w-full border-2 border-black rounded-lg">
+                <div class="flex p-2"><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
+                <input class="grow h-full rounded-lg outline-none" type="text" placeholder="Tìm Kiếm Nhanh">
+            </div>
+        </div>
+        <div class="flex flex-row w-1/5 items-center justify-center gap-x-4 bg-gray-300 rounded-lg">
+            <div class="flex mail p-2"><i class="fa-solid fa-envelope text-2xl"></i></div>
+            <div class="flex notify p-2"><i class="fa-solid fa-bell text-2xl"></i></div>
+            <div class="flex avatar h-10 w-10 rounded-full">
+                <img class="rounded-full" src="../image/hehe.jpg" alt="">
+            </div>
+            <div class="flex flex-col">
+                <div>Anh Ni</div>
+                <div>Collector</div>
+            </div>
+            <div class="flex p-2"><i class="fa-solid fa-caret-right fa-rotate-90 text-2xl"></i></div>
+        </div>
+    </header>
+    <main class="flex flex-col md:flex-row w-full bg-white text-black">
+        <div class="flex flex-col w-1/5 bg-zinc-300">
+            <div class="flex justify-center text-4xl font-bold text-green-700 p-8">UWC 2.0</div>
+            <div class="flex items-center border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 p-2 h-24">
+                <i class="fa-solid fa-house text-2xl p-2"></i>
+                <a href="Dashboard_user.html" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
+            </div>
+            <div class="flex flex-row items-center border-r-4 text-green-800 border-green-900 p-2 h-24">
+                <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
+                <a href="mission_user.html" class="p-2 font-bold text-2xl p-2">Nhiệm vụ</a>
+            </div>
+            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24">
+                <i class="fa-solid fa-square-plus text-2xl p-2"></i>
+                <a href="history_user.html" class="p-2 font-bold text-2xl p-2">Lịch sử làm việc</a>
+            </div>
+            <!-- <div class="flex flex-col">
+                <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24 extend">
+                    <i class="fa-solid fa-book text-2xl p-2"></i>
+                    <a href="#" class="p-2 font-bold text-2xl p-2">Thông Tin</a>
+                    <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 icon"></i>
+                </div>
+                <div>
+                    <ul class="bg-zinc-400 list_item cursor-pointer">
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-user text-2xl p-2"></i>
+                            <a href="Employee.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
+                            </a>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-gauge text-2xl p-2"></i>
+                            <a href="Vehical.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
+                            </a>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-location-dot text-2xl p-2"></i>
+                            <a href="MCP.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Điểm Thu Thập</h1>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="flex items-center border-r-4 border-zinc-300 border-zinc-300 hover:text-zinc-500 hover:border-black p-2 h-24">
+                <i class="fa-sharp fa-solid fa-gear text-2xl p-2"></i>
+                <a href="#" class="text-2xl font-bold p-2">Cài Đặt</a>
+            </div>
+
+        </div>
+        <div class="flex flex-col md:w-4/5 p-2 trang_chu">
+            <div class="px-8 py-4 text-3xl font-bold">Nhiệm vụ</div>
+            <div class="md:flex flex-row-reverse px-4">
+                <div class=" md:w-2/5 p-4 ">
+                    <div class="bg-gray-200 rounded-lg px-4 py-2 mb-4">
+                        <div class="text-2xl text-zinc-100 font-bold p-2 mx-8 mb-4 text-center bg-green-500 rounded-lg">Phương tiện</div>
+                        <div class="bg-white p-2 m-2 rounded-lg ">
+                            <h3 class="font-bold">Danh sách phương tiện khả dụng:</h3>
+                            <div>
+                                <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden">
+                                    <thead class="border-b-2 border-black text-center rounded-lg p-4">
+                                      <tr class="">
+                                        <th>Phân loại</th>
+                                        <th>Vị trí</th>
+                                        <th>Số lượng</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                      <tr class="border-b-2 border-black">
+                                        <td class="p-2">Troller</td>
+                                        <td class="p-2">MCP-A1</td>
+                                        <td class="p-2">5</td>
+                                      </tr>
+                                      <tr class="border-b-2 border-black">
+                                        <td class="p-2">Troller</td>
+                                        <td class="p-2">MCP-A2</td>
+                                        <td class="p-2">7</td>
+                                      </tr>
+                                      <tr class="border-b-2 border-black">
+                                        <td class="p-2">Collecting vehical</td>
+                                        <td class="p-2">MCP-A1</td>
+                                        <td class="p-2">3</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
+                          
+                    </div>
+                    <div class="bg-gray-200 rounded-lg px-4 py-2">
+                        <div class="text-2xl text-zinc-100 font-bold p-2 mx-8 mb-4 text-center bg-green-500 rounded-lg">Thành viên</div>
+                        <div class="bg-white p-2 m-2 rounded-lg ">
+                            <h3 class="font-bold">Danh sách các thành viên chung công việc:</h3>
+                            <div>
+                                <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden">
+                                    <thead class="border-b-2 border-black text-center rounded-lg p-4">
+                                      <tr class="">
+                                        <th>Tên</th>
+                                        <th>Chức vụ</th>
+                                        <th>Liên hệ</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                      <tr class="border-b-2 border-black">
+                                        <td class="p-2">Nguyễn Văn A</td>
+                                        <td class="p-2">Collector</td>
+                                         <td class="p-2"><i class="fa-solid fa-envelope text-2xl cursor-pointer"></i></td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
+                          
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg md:w-3/5 px-4 py-2 my-4 ml-4">
+                    <div class="text-2xl text-zinc-100 font-bold p-2 mx-8 mb-4 text-center bg-green-500 rounded-lg">Lịch trình công việc hôm nay</div>
+                    <div class="bg-white p-2 m-4 rounded-lg">
+                        <div class="flex flex-col">
+                            <h3 class=" font-bold">Khu vực làm việc:</h3>
+                            <div>Đông Hòa, Dĩ An, Bình Dương</div>
+                            <div class="flex justify-center">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                class="p-2 justify-center"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="bg-white p-2 m-4 rounded-lg">
+                        <div class=""> 
+                            <h3 class=" font-bold">Lộ trình các tuyến đường cho khu vực:</h3>
+                            <div class="p-2 px-4">
+                                <input type="checkbox" id="MCP1" name="MCP1" value="A1"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 focus:ring-2">
+                                <label for="MCP1" class="p-2">ThomasEdison (MCP-A1) <button onclick="imageMCP('A1')" class="text-blue-500">Chi tiết</button></label><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                    id="A1" class="p-2" hidden allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                                <input type="checkbox" id="MCP2" name="MCP2" value="B1"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 focus:ring-2">
+                                <label for="MCP2" class="p-2">Đ.Thánh Gióng (MCP-B1) <button onclick="imageMCP('B1')" class="text-blue-500">Chi tiết</button></label><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                    id="B1" class="p-2" hidden allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                                <input type="checkbox" id="MCP3" name="MCP3" value="C2"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 focus:ring-2">
+                                <label for="MCP3"  class="p-2">Đ.Vành Đai (MCP-C2) <button onclick="imageMCP('C2')" class="text-blue-500">Chi tiết</button></label><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                    id="C2" class="p-2" hidden allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                                <input type="checkbox" id="MCP1" name="MCP1" value="A1"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 focus:ring-2">
+                                <label for="MCP1" class="p-2">Đ.Thánh Gióng (MCP-B2) <button onclick="imageMCP('B2')" class="text-blue-500">Chi tiết</button></label><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                    id="B2" class="p-2" hidden allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                                <input type="checkbox" id="MCP2" name="MCP2" value="B1"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 focus:ring-2">
+                                <label for="MCP2" class="p-2">Đ.Tân Lập (MCP-D2) <button onclick="imageMCP('D2')" class="text-blue-500">Chi tiết</button></label><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.314395294029!2d106.79479256272312!3d10.875645811410505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkEhRRy1IQ00sIEPGoSBz4bufIExpbmggVHJ1bmcu!5e0!3m2!1svi!2s!4v1679739834981!5m2!1svi!2s" 
+                                    id="D2" class="p-2" hidden allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="bg-zinc-300 rounded-lg p-4"></div> -->
+            </div>
+            <!-- <div class="flex p-4 h-full">
+                <div class="flex w-3/4 bg-zinc-200 rounded-lg p-4"></div>
+                <div class="flex w-1/4 bg-zinc-200 rounded-lg p-4"></div>
+            </div> -->
+        </div>
+    </main>
+    <!-- <footer class="w-full bg-zinc-900 text-zinc-400 text-1xl">
+        <div class="container mx-auto p-8">
+            <div class="flex flex-col">
+                <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
+                    <div class="list_item">
+                        <div>
+                            <a href="">Stories</a>
+                        </div>
+                        <div>
+                            <a href="">Impact</a>
+                        </div>
+                        <div>
+                            <a href="">Company</a>
+                        </div>
+                        <div>
+                            <a href="">Newsroom</a>
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <div>
+                            <a href="../trang_chu/home.php">Shop Nike.com</a>
+                        </div>
+                        <div>
+                            <a href="https://www.converse.com/shop/mens-shoes">Shop Converse.com</a>
+                        </div>
+                        <div>
+                            <a href="">Get Help</a>
+                        </div>
+                        <div>
+                            <a href="">Investors</a>
+                        </div>
+                    </div>
+                    <div class="flex list_item">
+                        <div class="grow">
+                            <a href="https://www.instagram.com/nike/" class="text-white"><i class="fa-brands fa-instagram text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://twitter.com/nike" class="text-white"><i class="fa-brands fa-square-twitter text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.youtube.com/user/nike/videos" class="text-white"><i class="fa-brands fa-youtube text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.facebook.com/nike/" class="text-white"><i class="fa-brands fa-facebook text-3xl menu_hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-end">
+                    <div class="grid grid-cols-4 gap-4 p-4 text-1xl max-sm:flex-row">
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Terms of Use</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Nike Privacy Policy</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">CA Supply Chains Act</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white"> @2022 Nike, Inc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+</body>
+<script>
+    var curDate = new Date();
+      
+    // Ngày hiện tại
+    var curDay = curDate.getDate();
+ 
+    // Tháng hiện tại
+    var curMonth = curDate.getMonth() + 1;
+      
+    // Năm hiện tại
+    var curYear = curDate.getFullYear();
+ 
+    // Gán vào thẻ HTML
+    document.getElementById('current-time').innerHTML = "Ngày làm việc: " + curDay + "/" + curMonth + "/" + curYear;
+    
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    
+    document.getElementById("hvn").innerHTML = time;
+
+    function imageMCP(mcp){
+        document.getElementById(mcp).hidden = false;
+        
+    }
+   </script>
+</html>

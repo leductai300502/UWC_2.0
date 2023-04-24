@@ -102,21 +102,24 @@
         function validateForm_login(){
             var name=document.getElementById("name");
             var password=document.getElementById("password");
-            if (name.value != "leductai" || name.value != "nguyenanhni") {
+            if (name.value != "leductai" && name.value != "nguyenanhni") {
                 alert("Sai Tên Đăng Nhập!");
                 return ;
             }
-            if (password.value != "hihi123") {
+            if (password.value != "hihi123" && password.value !="hehe123") {
                 alert("Sai Mật Khẩu!");
-                alert("Complete!");
-                window.location.href = "employee.html";
                 return ;
             }
-            else if(password.value != "hehe123") {
-                alert("Sai Mật Khẩu!");
-                return ;
+            else if(password.value == "hehe123" && name.value == "leductai") {             
                 alert("Complete!");
-                window.location.href = "Dashboard.html";
+                window.location.href = "Controller/Dashboard.html";
+                return ;
+            }
+            else if(password.value == "hihi123" && name.value == "nguyenanhni")
+            {
+                alert("Complete!");
+                window.location.href = "User/Dashboard_user.html";
+                return ;   
             }
         }
         function Home_page() {

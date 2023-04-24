@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="config/tailwind.config.js">
+    <link rel="stylesheet" href="style_animation.css">
+    <script>
+        $(document).ready(function() {
+            $(".extend").click(function() {
+                $(".list_item").toggleClass("hidden");
+                $(".icon").toggleClass("fa-rotate-90");
+            });
+        });
+
+    </script>
+    <title>Trang Chu</title>
+</head>
+
+<body>
+    <header class="flex fex-row bg-zinc-900 gap-x-4 p-4">
+        <div class="flex w-1/5 p-2">LOGO</div>
+        <div class="flex w-3/5 p-2">
+            <div class="flex flex-row bg-white items-center w-full border-2 border-black rounded-lg">
+                <div class="flex p-2"><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
+                <input class="grow h-full rounded-lg outline-none" type="text" placeholder="Tìm Kiếm Nhanh">
+            </div>
+        </div>
+        <div class="flex flex-row w-1/5 items-center justify-center gap-x-4 bg-gray-300 rounded-lg">
+            <div class="flex mail p-2"><i class="fa-solid fa-envelope text-2xl"></i></div>
+            <div class="flex notify p-2"><i class="fa-solid fa-bell text-2xl"></i></div>
+            <div class="flex avatar h-10 w-10 rounded-full">
+                <img class="rounded-full" src="../image/hehe.jpg" alt="">
+            </div>
+            <div class="flex flex-col">
+                <div>Anh Ni</div>
+                <div>Collector</div>
+            </div>
+            <div class="flex p-2"><i class="fa-solid fa-caret-right fa-rotate-90 text-2xl"></i></div>
+        </div>
+    </header>
+    <main class="flex flex-col md:flex-row w-full bg-white text-black">
+        <div class="flex flex-col w-1/5 bg-zinc-300">
+            <div class="flex justify-center text-4xl font-bold text-green-700 p-8">UWC 2.0</div>
+            <div class="flex items-center border-r-4 text-green-800 border-green-900 p-2 h-24">
+                <i class="fa-solid fa-house text-2xl p-2"></i>
+                <a href="Dashboard_user.html" onclick="state_button()" class="text-2xl font-bold p-2">Trang Chủ</a>
+            </div>
+            <div class="flex flex-row items-center border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 p-2 h-24">
+                <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
+                <a href="mission_user.html" class="p-2 font-bold text-2xl p-2">Nhiệm vụ</a>
+            </div>
+            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24">
+                <i class="fa-solid fa-square-plus text-2xl p-2"></i>
+                <a href="history_user.html" class="p-2 font-bold text-2xl p-2">Lịch sử làm việc</a>
+            </div>
+            <!-- <div class="flex flex-col">
+                <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24 extend">
+                    <i class="fa-solid fa-book text-2xl p-2"></i>
+                    <a href="#" class="p-2 font-bold text-2xl p-2">Thông Tin</a>
+                    <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 icon"></i>
+                </div>
+                <div>
+                    <ul class="bg-zinc-400 list_item cursor-pointer">
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-user text-2xl p-2"></i>
+                            <a href="Employee.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Nhân Viên</h1>
+                            </a>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-gauge text-2xl p-2"></i>
+                            <a href="Vehical.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Phương Tiện</h1>
+                            </a>
+                        </li>
+                        <li class="flex w-full bg-white h-px"></li>
+                        <li class="flex flex-row items-center h-24 hover:text-green-800 hover:border-green-900">
+                            <i class="fa-solid fa-location-dot text-2xl p-2"></i>
+                            <a href="MCP.html">
+                                <h1 class="p-2 font-bold text-2xl p-2">Điểm Thu Thập</h1>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="flex items-center border-r-4 border-zinc-300 border-zinc-300 hover:text-zinc-500 hover:border-black p-2 h-24">
+                <i class="fa-sharp fa-solid fa-gear text-2xl p-2"></i>
+                <a href="#" class="text-2xl font-bold p-2">Cài Đặt</a>
+            </div>
+
+        </div>
+        <div class="flex flex-col md:w-4/5 p-2 trang_chu">
+            <div class="px-8 py-4 text-3xl font-bold">Trang Chủ</div>
+            <div class="md:flex flex-row-reverse">
+                <div class="bg-zinc-100 rounded-lg md:w-1/5 ml-2 mb-2 p-1">
+                    <div class="text-xl text-zinc-100 font-semibold p-2 mb-4 text-center bg-green-500  rounded-t-lg">Chấm công</div>
+                    <div class="bg-white p-2 m-4 text-center rounded-lg font-bold">
+                        <div id="current-time" class="py-2 text-green-700"></div>
+                        <!-- <div id="hvn" class="pb-2"></div> -->
+                        <!-- <form action="timekeeping"> -->
+                            <button onclick="chamcong()" id="button_chamcong" class="bg-green-500 py-2 px-4 rounded-full text-white hover:px-6 border-green-400 border-4">Chấm</button>
+                        <!-- </form>                     -->
+                    </div>   
+                </div>
+                <div class="bg-zinc-100 rounded-lg md:w-4/5 mb-2 p-1">
+                    <div class="text-xl text-zinc-100 font-semibold p-2 text-center bg-green-500 rounded-t-lg">Biểu đồ chấm công</div>
+                    <!-- <div class="flex"> -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-full lg:w-full">
+                                <div class="flex flex-col justify-between h-full bg-white rounded-lg p-2">
+                                    <div class="mt-6">
+                                        <div>
+                                            <canvas id="myChart" width="1025" height="400" role="img" aria-label="line graph to show selling overview in terms of months and numbers" ></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+                
+                <!-- <div class="bg-zinc-300 rounded-lg p-4"></div> -->
+            </div>
+            <section class="flex flex-col justify-center antialiased bg-gray-100 text-gray-600 min-h-screen">
+                <div class="max-w-3xl mx-auto p-4 sm:px-6 h-full">
+                    <!-- Chart widget -->
+                    <div class="flex flex-col col-span-full xl:col-span-8 bg-white shadow-lg rounded-sm border border-gray-200">
+                        <header class="px-5 py-4 border-b border-gray-100 flex items-center bg-green-500 rounded-t-lg">
+                            <h2 class="font-semibold text-white text-2xl">Số ngày làm việc theo tháng</h2>
+                        </header>
+                        <div class="px-5 py-1">
+                            <div class="flex flex-wrap">
+                                <!-- Unique Visitors -->
+                                <div class="flex items-center py-2">
+                                    <div class="mr-5">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-gray-800 mr-2">24</div>
+                                            <div class="text-sm font-medium text-green-500">+10%</div>
+                                        </div>
+                                        <div class="text-sm text-gray-500">Số ngày làm</div>
+                                    </div>
+                                    <div class="hidden md:block w-px h-8 bg-gray-200 mr-5" aria-hidden="true"></div>
+                                </div>
+                                <!-- Total Pageviews -->
+                                <div class="flex items-center py-2">
+                                    <div class="mr-5">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-gray-800 mr-2">20</div>
+                                            <div class="text-sm font-medium text-green-500">+7%</div>
+                                        </div>
+                                        <div class="text-sm text-gray-500">Ngày làm đúng giờ</div>
+                                    </div>
+                                    <div class="hidden md:block w-px h-8 bg-gray-200 mr-5" aria-hidden="true"></div>
+                                </div>
+                                <!-- Bounce Rate -->
+                                <div class="flex items-center py-2">
+                                    <div class="mr-5">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-gray-800 mr-2">8%</div>
+                                            <div class="text-sm font-medium text-yellow-500">-2%</div>
+                                        </div>
+                                        <div class="text-sm text-gray-500">Tỉ lệ đi làm muộn</div>
+                                    </div>
+                                    <div class="hidden md:block w-px h-8 bg-gray-200 mr-5" aria-hidden="true"></div>
+                                </div>
+                                <!-- Visit Duration-->
+                                <!-- <div class="flex items-center">
+                                    <div>
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-gray-800 mr-2">2m 56s</div>
+                                            <div class="text-sm font-medium text-yellow-500">+7%</div>
+                                        </div>
+                                        <div class="text-sm text-gray-500">Visit Duration</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Chart built with Chart.js 3 -->
+                        <div class="flex-grow">
+                            <canvas id="analytics-card-01" width="1200" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- More components -->
+            <div x-show="open" class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60" x-data="{ open: true }">
+                <div class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
+                    <div>👉 <a class="hover:underline ml-1" href="https://cruip.com/mosaic/?ref=codepen-cruip-analytics" target="_blank">More components on Cruip.com</a></div>
+                    <button class="text-gray-500 hover:text-gray-400 ml-5" @click="open = false">
+                        <span class="sr-only">Close</span>
+                        <svg class="w-4 h-4 flex-shrink-0 fill-current" viewBox="0 0 16 16">
+                            <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer class="w-full bg-zinc-900 text-zinc-400 text-1xl">
+        <div class="container mx-auto p-8">
+            <div class="flex flex-col">
+                <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
+                    <div class="list_item">
+                        <div>
+                            <a href="">Stories</a>
+                        </div>
+                        <div>
+                            <a href="">Impact</a>
+                        </div>
+                        <div>
+                            <a href="">Company</a>
+                        </div>
+                        <div>
+                            <a href="">Newsroom</a>
+                        </div>
+                    </div>
+                    <div class="list_item">
+                        <div>
+                            <a href="../trang_chu/home.php">Shop Nike.com</a>
+                        </div>
+                        <div>
+                            <a href="https://www.converse.com/shop/mens-shoes">Shop Converse.com</a>
+                        </div>
+                        <div>
+                            <a href="">Get Help</a>
+                        </div>
+                        <div>
+                            <a href="">Investors</a>
+                        </div>
+                    </div>
+                    <div class="flex list_item">
+                        <div class="grow">
+                            <a href="https://www.instagram.com/nike/" class="text-white"><i class="fa-brands fa-instagram text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://twitter.com/nike" class="text-white"><i class="fa-brands fa-square-twitter text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.youtube.com/user/nike/videos" class="text-white"><i class="fa-brands fa-youtube text-3xl menu_hover"></i></a>
+                        </div>
+                        <div class="grow">
+                            <a href="https://www.facebook.com/nike/" class="text-white"><i class="fa-brands fa-facebook text-3xl menu_hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-end">
+                    <div class="grid grid-cols-4 gap-4 p-4 text-1xl max-sm:flex-row">
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Terms of Use</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">Nike Privacy Policy</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white menu_hover">CA Supply Chains Act</a>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-white"> @2022 Nike, Inc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+</body>
+<script>
+    var curDate = new Date();
+      
+    // Ngày hiện tại
+    var curDay = curDate.getDate();
+ 
+    // Tháng hiện tại
+    var curMonth = curDate.getMonth() + 1;
+      
+    // Năm hiện tại
+    var curYear = curDate.getFullYear();
+ 
+    // Gán vào thẻ HTML
+    document.getElementById('current-time').innerHTML = "Ngày làm việc: " + curDay + "/" + curMonth + "/" + curYear;
+    
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    
+    // document.getElementById("hvn").innerHTML = time;
+
+    function chamcong(){
+        document.getElementById("button_chamcong").innerHTML = "đã chấm công";
+        var alert_chamcong = "Chấm công thành công vào lúc " + time;
+        window.alert(alert_chamcong);
+        // document.getElementById("button_chamcong").
+    }
+    
+   </script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/chartjs-adapter-moment/1.0.0/chartjs-adapter-moment.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.5.2/cdn.js'></script><script  src="../script/script_user.js"></script>
+</html>
