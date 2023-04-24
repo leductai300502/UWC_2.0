@@ -39,12 +39,12 @@
         });
 
     </script>
-    <title>Nhân Viên</title>
+    <title>MCP</title>
 </head>
 
 <body>
     <header class="flex fex-row bg-zinc-900 gap-x-4 p-4">
-        <div class="flex w-1/5 p-2">LOGO</div>
+        <div class="flex w-1/5 p-2 text-white"><i class="fa-solid fa-snowflake text-2xl text-green-700 fa-spin"></i></div>
         <div class="flex w-3/5 p-2">
             <div class="flex flex-row bg-white items-center w-full border-2 border-black rounded-lg">
                 <div class="flex p-2"><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
@@ -75,10 +75,10 @@
                 <i class="fa-sharp fa-solid fa-square-poll-vertical text-2xl p-2"></i>
                 <a href="controller.html" class="p-2 font-bold text-2xl p-2">Bảng Điều Khiển</a>
             </div>
-            <div class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24">
+            <!-- <div class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24">
                 <i class="fa-solid fa-square-plus text-2xl p-2"></i>
                 <a href="#" class="p-2 font-bold text-2xl p-2">Tổng Quan</a>
-            </div>
+            </div> -->
             <div class="flex flex-col">
                 <div onclick="extend()" class="flex flex-row border-r-4 border-zinc-300 hover:text-green-800 hover:border-green-900 items-center p-2 h-24 extend">
                     <i class="fa-solid fa-book text-2xl p-2"></i>
@@ -154,7 +154,7 @@
                             <div class="flex text-2xl items-center justify-center p-1"><i class="fa-sharp fa-solid fa-circle text-orange-400"></i></div>
                         </div>
                         <div class="flex flex-row justify-center p-2">
-                            <div class="flex text-3xl font-bold justify-center p-1">Rỗng</div>
+                            <div class="flex text-3xl font-bold justify-center p-1">Đang Hoạt Động</div>
                             <div class="flex text-2xl items-center justify-center p-1"><i class="fa-sharp fa-solid fa-circle text-green-400"></i></div>
                         </div>
                         <div class="flex flex-row justify-center p-2 hidden">
@@ -182,12 +182,12 @@
                                 <i class="fa-solid fa-caret-right fa-rotate-90 text-2xl p-2 cursor-pointer"></i>
                             </div>
                         </div> -->
-                        <div class="flex w-1/6 h-3/4 bg-gray-500 rounded-lg bg-green-600 p-2 items-center justify-between">
+                        <!-- <div class="flex w-1/6 h-3/4 bg-gray-500 rounded-lg bg-green-600 p-2 items-center justify-between">
                             <div class="flex p-2 text-xl text-zinc-200">Tạo mới</div>
-                            <a href="Add_MCP.html">
+                            <a href="#">
                                 <i class="fa-solid fa-circle-plus text-xl p-2 cursor-pointer"></i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="w-full h-full p-4 bg-white rounded-3xl">
                         <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item" id="item_0">
@@ -195,108 +195,219 @@
                               <tr>
                                 <th>ID</th>
                                 <th>Tên MCP</th>
+                                <th>Nhân Viên Thực Hiện</th>
                                 <th>Sức Chứa</th>
                                 <th>Trạng thái</th>
                               </tr>
                             </thead>
                             <tbody class="text-center">
                               <tr class="border-b-2 border-black info-001">
-                                <td class="p-4">001</td>
+                                <td class="p-4">CP-001</td>
                                 <td class="p-4">MCP 1</td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
+                                <td class="p-4">Harry</td>
+                                <td class="p-4">
+                                    <div class="flex flex-row gap-x-1 justify-center">
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-zinc-400"></div>
+                                    </div>
+                                </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-002">
-                                <td class="p-4">002</td>
+                                <td class="p-4">CP-002</td>
                                 <td class="p-4">MCP 2</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
+                                <td class="p-4">Zeni</td>
+                                <td class="p-4">
+                                    <div class="flex flex-row gap-x-1 justify-center">
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-zinc-400"></div>
+                                        <div class=" w-6 h-2 bg-zinc-400"></div>
+                                    </div>
+                                </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-003">
-                                <td class="p-4">003</td>
+                                <td class="p-4">CP-003</td>
                                 <td class="p-4">MCP 3</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
+                                <td class="p-4">Bos</td>
+                                <td class="p-4">
+                                    <div class="flex flex-row gap-x-1 justify-center">
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                    </div>
+                                </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                               <tr class="border-b-2 border-black p-2 info-004">
-                                <td class="p-4">004</td>
+                                <td class="p-4">CP-004</td>
                                 <td class="p-4">MCP 4</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
+                                <td class="p-4">Tai</td>
+                                <td class="p-4">
+                                    <div class="flex flex-row gap-x-1 justify-center">
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-green-700"></div>
+                                        <div class=" w-6 h-2 bg-zinc-400"></div>
+                                    </div>
+                                </td>
                                 <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
                               </tr>
                             </tbody>
                         </table>
                         <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_1">
                             <thead class="border-b-2 border-black text-center rounded-lg p-2">
-                              <tr>
-                                <th>ID</th>
-                                <th>Tên MCP</th>
-                                <th>Sức Chứa</th>
-                                <th>Trạng thái</th>
-                              </tr>
-                            </thead>
-                            <tbody class="text-center">
-                              <tr class="border-b-2 border-black info-001">
-                                <td class="p-4">001</td>
-                                <td class="p-4">MCP 5</td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-002">
-                                <td class="p-4">002</td>
-                                <td class="p-4">MCP 6</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-003">
-                                <td class="p-4">003</td>
-                                <td class="p-4">MCP 7</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-004">
-                                <td class="p-4">004</td>
-                                <td class="p-4">MCP 8</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                            </tbody>
+                                <tr>
+                                  <th>ID</th>
+                                  <th>Tên MCP</th>
+                                  <th>Nhân Viên Thực Hiện</th>
+                                  <th>Sức Chứa</th>
+                                  <th>Trạng thái</th>
+                                </tr>
+                              </thead>
+                              <tbody class="text-center">
+                                <tr class="border-b-2 border-black info-001">
+                                  <td class="p-4">CP-005</td>
+                                  <td class="p-4">MCP 5</td>
+                                  <td class="p-4">Ha</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-002">
+                                  <td class="p-4">CP-006</td>
+                                  <td class="p-4">MCP 6</td>
+                                  <td class="p-4">Son</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-003">
+                                  <td class="p-4">CP-007</td>
+                                  <td class="p-4">MCP 7</td>
+                                  <td class="p-4">Bos</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-004">
+                                  <td class="p-4">CP-008</td>
+                                  <td class="p-4">MCP 8</td>
+                                  <td class="p-4">Tai</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                              </tbody>
                         </table>
                         <table class="w-full table-fixed border-black border-2 rounded-lg overflow-hidden item hidden" id="item_2">
                             <thead class="border-b-2 border-black text-center rounded-lg p-2">
-                              <tr>
-                                <th>ID</th>
-                                <th>Tên MCP</th>
-                                <th>Sức Chứa</th>
-                                <th>Trạng thái</th>
-                              </tr>
-                            </thead>
-                            <tbody class="text-center">
-                              <tr class="border-b-2 border-black info-001">
-                                <td class="p-4">001</td>
-                                <td class="p-4">MCP 9</td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-002">
-                                <td class="p-4">002</td>
-                                <td class="p-4">MCP 10</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-three-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-003">
-                                <td class="p-4">003</td>
-                                <td class="p-4">MCP 11</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                              <tr class="border-b-2 border-black p-2 info-004">
-                                <td class="p-4">004</td>
-                                <td class="p-4">MCP 12</td>
-                                <td class="p-4"><i class="fa-solid fa-circle-haft-quarter text-green-700"></i></td>
-                                <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
-                              </tr>
-                            </tbody>
+                                <tr>
+                                  <th>ID</th>
+                                  <th>Tên MCP</th>
+                                  <th>Nhân Viên Thực Hiện</th>
+                                  <th>Sức Chứa</th>
+                                  <th>Trạng thái</th>
+                                </tr>
+                              </thead>
+                              <tbody class="text-center">
+                                <tr class="border-b-2 border-black info-001">
+                                  <td class="p-4">CP-009</td>
+                                  <td class="p-4">MCP 9</td>
+                                  <td class="p-4">Hoang</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-002">
+                                  <td class="p-4">CP-010</td>
+                                  <td class="p-4">MCP 10</td>
+                                  <td class="p-4">Jone</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-003">
+                                  <td class="p-4">CP-011</td>
+                                  <td class="p-4">MCP 11</td>
+                                  <td class="p-4">Venti</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                                <tr class="border-b-2 border-black p-2 info-004">
+                                  <td class="p-4">CP-012</td>
+                                  <td class="p-4">MCP 12</td>
+                                  <td class="p-4">Tai</td>
+                                  <td class="p-4">
+                                      <div class="flex flex-row gap-x-1 justify-center">
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-green-700"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                          <div class=" w-6 h-2 bg-zinc-400"></div>
+                                      </div>
+                                  </td>
+                                  <td class="p-4"><i class="fa-sharp fa-solid fa-circle text-green-700"></i></td>
+                                </tr>
+                              </tbody>
                         </table>
                         <div class="flex flex-row gap-x-4 justify-center cursor-pointer">
                             <div><i class="fa-solid fa-arrow-left text-xl" id="previous"></i></div>

@@ -53,7 +53,7 @@
                     <div class="flex flex-col justify-center p-2">
                         <div class="flex justify-center p-1">
                             <h1 class="text-znic-400 text-6xl font-semibold">
-                                UWC 2.0 hehe
+                                UWC 2.0
                             </h1>
                         </div>
                         <div class="flex justify-center p-1">
@@ -102,17 +102,22 @@
         function validateForm_login(){
             var name=document.getElementById("name");
             var password=document.getElementById("password");
-            if (name.value != "leductai") {
+            if (name.value != "leductai" || name.value != "nguyenanhni") {
                 alert("Sai Tên Đăng Nhập!");
                 return ;
             }
-            
-            if (password.value != "hehe123") {
+            if (password.value != "hihi123") {
                 alert("Sai Mật Khẩu!");
+                alert("Complete!");
+                window.location.href = "employee.html";
                 return ;
             }
-            alert("Complete!");
-            window.location.href = "Dashboard.html";
+            else if(password.value != "hehe123") {
+                alert("Sai Mật Khẩu!");
+                return ;
+                alert("Complete!");
+                window.location.href = "Dashboard.html";
+            }
         }
         function Home_page() {
             window.location.href = 'index.html';
